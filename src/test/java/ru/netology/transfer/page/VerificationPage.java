@@ -19,6 +19,12 @@ public class VerificationPage {
         verifyButton.click();
         return new DashboardPage();
     }
+
+    public DashboardPage setVerificationCode(String code) {
+        codeField.setValue(code);
+        verifyButton.click();
+        return new DashboardPage();
+    }
 }
 
 

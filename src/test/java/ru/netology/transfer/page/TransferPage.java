@@ -27,6 +27,11 @@ public class TransferPage {
         transferCardFrom.setValue(cardInfo.getCardNumber());
         transferButton.click();
     }
+    public void setTransferMoney(String transferAmount, String cardNumber) {
+        transferAmountField.setValue(transferAmount);
+        transferCardFrom.setValue(cardNumber);
+        transferButton.click();
+    }
 
     public DashboardPage validTransfer(String transferAmount, DataHelper.CardInfo cardInfo) {
         transferMoney(transferAmount, cardInfo);
